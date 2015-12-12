@@ -1,0 +1,30 @@
+<head>
+  <title>Our favorite physicists</title>
+</head>
+
+<body>
+  <div id="outer">
+    <h1>Vote for your favorite physicist</h1>
+    {{> list}}
+  </div>
+</body>
+
+<template name="list">
+  <div class="leaderboard">
+    {{#each persons}}
+    {{> person}}
+    {{/each}}
+  </div>
+
+  <div class="details">
+    <div class="name">{{selected_name}}</div>
+    <input class="inc" name="" type="button" value="Give them a point"/>
+  </div>
+</template>
+
+<template name="person">
+  <div class="person {{selected}}">
+    <span class="name">{{name}}</span>
+    <span class="score">{{score}}</span>
+  </div>
+</template>

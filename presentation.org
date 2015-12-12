@@ -1,0 +1,58 @@
+* Meteor
+** Overview
+  - What is Meteor
+  - code review of simple Meteor apps
+  - Components
+** What is Meteor?
+*** Open-source platform 
+  - not just a backend db tool
+  - not just a front-end framework for view rendering
+  - it's full stack
+    - Node.js server; Mongodb backend; MiniMongo client cache; 
+      flexible view templates; Iron:Router; library management; 
+      deployment; hot deploys; etc.
+  - for building web and mobile apps in JavaScript
+  - real time
+*** Built to power modern apps with 
+  - Rich user interfaces
+    - single page apps
+    - latency compensation
+  - Collaborative, multi-user applications
+    - reactive data sources
+  - Cross-platform apps; mobile integration with Cordova.
+**** It's complete and easy so development is fast
+*** What is a modern app?
+   Facebook Twitter Gmail
+   - Focus on your app's unique features instead of wrangling network
+     code
+   - client-side smart cache
+   - Make Facebook-quality apps without Facebook's resources
+*** Old tools don't work for modern apps
+   - Modern apps serve data, not html
+   - Modern apps shouldn't need a refresh button
+   - Moving away from old architecture and its frameworks
+   - Rails, Django, PHP, ASP.NET, etc. are difficult 
+     to adapt to new model
+*** Meteor's cloud/client platform
+   - Meteor gives you all the components you need to make modern apps
+     work - it's a complete platform, not just a library to solve one,
+     or a couple problems
+** Demo
+** Components
+*** Major components - meteor.com/projects
+**** Livequery      :: realtime database connectors and queries
+**** DDP            :: websocket-based publish/subscribe data - 
+                       REST for websockets
+**** Minimongo      :: Mongodb API on client-side data store
+**** Tracker        :: reactive data source manager - 
+                       automatic event listening
+**** Blaze          :: reactive UI library - 
+                       can use several template languages
+**** Isobuild       :: unified build system for browser, 
+                       server, and mobile
+*** Other components 
+**** Accounts       :: instant account system for your app 
+**** Version Solver :: constraint-solver-based version management
+**** Meteor Tool    :: one CLI to rule them all
+
+
